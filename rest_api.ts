@@ -1,3 +1,10 @@
+// VATSIM's public & authenticated REST APIs on https://api.vatsim.net/
+// along with some other pages.
+//
+// These functions are not grouped into a struct, as the URLs that
+// they call are static - not dependent on a preceding call - unlike
+// those used to get live data from the network.
+
 import {
   AtcSessionEntry,
   ConnectionEntry,
