@@ -1,6 +1,6 @@
 // Wrapper for the VATSIM APIs to get live data from the servers.
 
-import { StatusData, V3ResponseData } from "./models.ts";
+import { Status, V3ResponseData } from "./models.ts";
 
 const STATUS_URL = "https://status.vatsim.net/status.json";
 
@@ -26,7 +26,8 @@ export async function getInstance(): Promise<Vatsim> {
       `Got status ${response.status} from the VATSIM status endpoint`,
     );
   }
-  const data: StatusData = await response.json();
+  const status: Status = (await response.json());
+  const data = status.data;
   const v3Url = data.v3[Math.floor(Math.random() * data.v3.length)];
   const transceiversUrl = data
     .transceivers[Math.floor(Math.random() * data.transceivers.length)];

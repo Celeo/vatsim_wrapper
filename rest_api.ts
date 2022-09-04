@@ -23,10 +23,10 @@ import {
  * for either giving it to a user or opening it in a browser.
  *
  * ```ts
- * const url = getStatusUrl(1234567890);
+ * const url = getStatsUrl(1234567890);
  * ```
  */
-export function getStatusUrl(cid: number): string {
+export function getStatsUrl(cid: number): string {
   return `https://stats.vatsim.net/stats/${cid}`;
 }
 

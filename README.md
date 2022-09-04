@@ -8,7 +8,21 @@ VATSIM API wrapper in TypeScript (Deno).
 
 ## Using
 
-TBD
+1. Create a new JS/TS file, i.e. `main.ts`.
+1. Add an import, i.e.
+
+```ts
+import { getStatsUrl } from "https://deno.land/x/vatsim_wrapper@v0.1.0/mod.ts";
+
+console.log(getStatsUrl(1234567890));
+```
+
+1. Run with `deno run <your_file_name>`
+
+```sh
+$ deno run main.ts
+> https://stats.vatsim.net/stats/1234567890
+```
 
 ## License
 
