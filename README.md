@@ -6,10 +6,6 @@
 
 VATSIM API wrapper in TypeScript (Deno).
 
-## Installing
-
-TBD
-
 ## Using
 
 TBD
@@ -18,6 +14,7 @@ TBD
 
 - Main library under MIT ([LICENSE](LICENSE)).
 - Supporting libraries in use under their respective licenses.
+- Airport data from <https://www.partow.net/miscellaneous/airportdatabase/>.
 
 ## Contributing
 
