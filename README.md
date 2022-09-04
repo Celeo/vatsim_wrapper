@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Runtime](https://img.shields.io/badge/runtime-Deno-orange)](https://deno.land/)
 
+![module version](https://shield.deno.dev/x/vatsim_wrapper)
+
 VATSIM API wrapper in TypeScript (Deno).
 
 ## Using
@@ -12,7 +14,7 @@ VATSIM API wrapper in TypeScript (Deno).
 1. Add an import, i.e.
 
 ```ts
-import { getStatsUrl } from "https://deno.land/x/vatsim_wrapper@v0.1.0/mod.ts";
+import { getStatsUrl } from "https://deno.land/x/vatsim_wrapper/mod.ts";
 
 console.log(getStatsUrl(1234567890));
 ```
