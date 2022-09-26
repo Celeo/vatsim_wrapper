@@ -51,7 +51,7 @@ export async function getV3Data(vatsim: Vatsim): Promise<V3ResponseData> {
 }
 
 /**
- * Query the stored V3 endpoint.
+ * Query the stored transceivers endpoint.
  *
  * ```ts
  * const vatsim = await getInstance();
