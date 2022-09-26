@@ -1,6 +1,6 @@
 // Wrapper for the VATSIM APIs to get live data from the servers.
 
-import { Status, V3ResponseData } from "./models.ts";
+import { Status, TransceiverResponseEntry, V3ResponseData } from "./models.ts";
 
 const STATUS_URL = "https://status.vatsim.net/status.json";
 
@@ -60,7 +60,7 @@ export async function getV3Data(vatsim: Vatsim): Promise<V3ResponseData> {
  */
 export async function getTransceiversData(
   vatsim: Vatsim,
-): Promise<V3ResponseData> {
+): Promise<Array<TransceiverResponseEntry>> {
   const response = await fetch(vatsim.transceiversUrl);
   if (response.status >= 400) {
     throw new Error(`Got status code ${response.status} from endpoint`);
